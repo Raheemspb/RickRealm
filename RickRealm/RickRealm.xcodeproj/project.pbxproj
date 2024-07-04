@@ -19,6 +19,7 @@
 		AA0BF8BE2C36C517008A39AF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8BD2C36C517008A39AF /* RealmSwift */; };
 		AA0BF8C02C36C5F0008A39AF /* RealmClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BF8BF2C36C5F0008A39AF /* RealmClass.swift */; };
 		AA0BF8C22C36C691008A39AF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BF8C12C36C691008A39AF /* NetworkManager.swift */; };
+		AA0BF8C42C36C749008A39AF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BF8C32C36C749008A39AF /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AA0BF8AF2C36C44F008A39AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0BF8BF2C36C5F0008A39AF /* RealmClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmClass.swift; sourceTree = "<group>"; };
 		AA0BF8C12C36C691008A39AF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AA0BF8C32C36C749008A39AF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				AA0BF8A52C36C44D008A39AF /* ViewController.swift */,
 				AA0BF8BF2C36C5F0008A39AF /* RealmClass.swift */,
 				AA0BF8C12C36C691008A39AF /* NetworkManager.swift */,
+				AA0BF8C32C36C749008A39AF /* TableViewCell.swift */,
 				AA0BF8A72C36C44D008A39AF /* Main.storyboard */,
 				AA0BF8AA2C36C44F008A39AF /* Assets.xcassets */,
 				AA0BF8AC2C36C44F008A39AF /* LaunchScreen.storyboard */,
@@ -165,6 +168,7 @@
 				AA0BF8A62C36C44D008A39AF /* ViewController.swift in Sources */,
 				AA0BF8A22C36C44D008A39AF /* AppDelegate.swift in Sources */,
 				AA0BF8C22C36C691008A39AF /* NetworkManager.swift in Sources */,
+				AA0BF8C42C36C749008A39AF /* TableViewCell.swift in Sources */,
 				AA0BF8C02C36C5F0008A39AF /* RealmClass.swift in Sources */,
 				AA0BF8A42C36C44D008A39AF /* SceneDelegate.swift in Sources */,
 			);
