@@ -13,6 +13,10 @@
 		AA0BF8A92C36C44D008A39AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA0BF8A82C36C44D008A39AF /* Base */; };
 		AA0BF8AB2C36C44F008A39AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0BF8AA2C36C44F008A39AF /* Assets.xcassets */; };
 		AA0BF8AE2C36C44F008A39AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA0BF8AD2C36C44F008A39AF /* Base */; };
+		AA0BF8B72C36C4E6008A39AF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8B62C36C4E6008A39AF /* SnapKit */; };
+		AA0BF8B92C36C4E6008A39AF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8B82C36C4E6008A39AF /* SnapKit-Dynamic */; };
+		AA0BF8BC2C36C517008A39AF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8BB2C36C517008A39AF /* Realm */; };
+		AA0BF8BE2C36C517008A39AF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA0BF8BD2C36C517008A39AF /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0BF8BE2C36C517008A39AF /* RealmSwift in Frameworks */,
+				AA0BF8BC2C36C517008A39AF /* Realm in Frameworks */,
+				AA0BF8B72C36C4E6008A39AF /* SnapKit in Frameworks */,
+				AA0BF8B92C36C4E6008A39AF /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,12 @@
 			dependencies = (
 			);
 			name = RickRealm;
+			packageProductDependencies = (
+				AA0BF8B62C36C4E6008A39AF /* SnapKit */,
+				AA0BF8B82C36C4E6008A39AF /* SnapKit-Dynamic */,
+				AA0BF8BB2C36C517008A39AF /* Realm */,
+				AA0BF8BD2C36C517008A39AF /* RealmSwift */,
+			);
 			productName = RickRealm;
 			productReference = AA0BF89E2C36C44D008A39AF /* RickRealm.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = AA0BF8952C36C44D008A39AF;
+			packageReferences = (
+				AA0BF8B52C36C4E6008A39AF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AA0BF8BA2C36C517008A39AF /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = AA0BF89F2C36C44D008A39AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +381,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA0BF8B52C36C4E6008A39AF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		AA0BF8BA2C36C517008A39AF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA0BF8B62C36C4E6008A39AF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0BF8B52C36C4E6008A39AF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AA0BF8B82C36C4E6008A39AF /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0BF8B52C36C4E6008A39AF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		AA0BF8BB2C36C517008A39AF /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0BF8BA2C36C517008A39AF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		AA0BF8BD2C36C517008A39AF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0BF8BA2C36C517008A39AF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA0BF8962C36C44D008A39AF /* Project object */;
 }
